@@ -1,0 +1,126 @@
+.about {
+  padding: var(--space-20) 0;
+  background-color: var(--color-bg-base);
+  border-top: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-16);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.header h2 {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-gray-300);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
+}
+
+.values {
+  margin-top: var(--space-16);
+}
+
+.values h3 {
+  margin-bottom: var(--space-8);
+  text-align: center;
+  font-size: var(--text-2xl);
+}
+
+.valuesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+.valueItem {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-fast);
+}
+
+.valueItem:hover {
+  border-color: var(--color-ocre-500);
+  background-color: var(--color-bg-elevated);
+  box-shadow: var(--shadow-md);
+}
+
+.valueIcon {
+  font-size: 40px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valueItem h4 {
+  margin-bottom: var(--space-2);
+  color: var(--color-ocre-300);
+}
+
+.valueItem p {
+  margin-bottom: 0;
+  font-size: var(--text-sm);
+  color: var(--color-gray-300);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--space-10);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .valuesList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: var(--space-12) 0;
+  }
+
+  .container {
+    padding: 0 var(--space-6);
+  }
+
+  .header h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .grid {
+    gap: var(--space-6);
+  }
+
+  .valuesList {
+    gap: var(--space-4);
+  }
+
+  .valueItem {
+    padding: var(--space-4);
+  }
+}
