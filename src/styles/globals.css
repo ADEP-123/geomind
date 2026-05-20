@@ -5,58 +5,60 @@
 
 :root {
   /* COLORES - FONDOS Y SUPERFICIES */
-  --color-bg-base: #0F1419;
-  --color-bg-surface: #161C24;
-  --color-bg-elevated: #1E2733;
+  --color-bg-base: #0f1419;
+  --color-bg-surface: #161c24;
+  --color-bg-elevated: #1e2733;
   --color-bg-overlay: #263040;
-  --color-border: #2E3A4E;
+  --color-border: #2e3a4e;
 
   /* COLORES - OCRE (ACCIÓN/ENERGÍA) */
-  --color-ocre-900: #3D2800;
-  --color-ocre-700: #7A5200;
-  --color-ocre-500: #C4860A;
-  --color-ocre-300: #E0A93C;
-  --color-ocre-100: #F5DFAA;
+  --color-ocre-900: #3d2800;
+  --color-ocre-700: #7a5200;
+  --color-ocre-500: #c4860a;
+  --color-ocre-300: #e0a93c;
+  --color-ocre-100: #f5dfaa;
 
   /* COLORES - TEAL (DATOS/CONFIANZA) */
-  --color-teal-900: #0A1F2E;
-  --color-teal-700: #1E4A6B;
-  --color-teal-500: #4A7C9E;
-  --color-teal-300: #7BACC7;
-  --color-teal-100: #BDD8E8;
+  --color-teal-900: #0a1f2e;
+  --color-teal-700: #1e4a6b;
+  --color-teal-500: #4a7c9e;
+  --color-teal-300: #7bacc7;
+  --color-teal-100: #bdd8e8;
 
   /* COLORES - TIERRA (GEOLOGÍA) */
-  --color-tierra-700: #3D2B1A;
-  --color-tierra-500: #6B4A2E;
-  --color-tierra-300: #A07850;
+  --color-tierra-700: #3d2b1a;
+  --color-tierra-500: #6b4a2e;
+  --color-tierra-300: #a07850;
 
   /* COLORES - VERDE MUSGO (NATURALEZA) */
-  --color-verde-700: #1A2E1A;
-  --color-verde-500: #3A5E3A;
-  --color-verde-300: #6A9E6A;
+  --color-verde-700: #1a2e1a;
+  --color-verde-500: #3a5e3a;
+  --color-verde-300: #6a9e6a;
 
   /* COLORES - GRISES NEUTROS */
-  --color-gray-900: #1A2030;
-  --color-gray-700: #2E3A4E;
-  --color-gray-500: #4E5E72;
-  --color-gray-300: #8A9AB0;
-  --color-gray-100: #D0DAE6;
-  --color-gray-50: #EEF2F7;
+  --color-gray-900: #1a2030;
+  --color-gray-700: #2e3a4e;
+  --color-gray-500: #4e5e72;
+  --color-gray-300: #8a9ab0;
+  --color-gray-100: #d0dae6;
+  --color-gray-50: #eef2f7;
 
   /* COLORES - SEMÁNTICOS */
-  --color-success: #4A9E6A;
-  --color-success-bg: #0F2A1A;
-  --color-warning: #C4860A;
-  --color-warning-bg: #2A1F05;
-  --color-error: #C4464A;
-  --color-error-bg: #2A0F10;
-  --color-info: #4A7C9E;
-  --color-info-bg: #0A1F2E;
+  --color-success: #4a9e6a;
+  --color-success-bg: #0f2a1a;
+  --color-warning: #c4860a;
+  --color-warning-bg: #2a1f05;
+  --color-error: #c4464a;
+  --color-error-bg: #2a0f10;
+  --color-info: #4a7c9e;
+  --color-info-bg: #0a1f2e;
 
   /* TIPOGRAFÍA */
   --font-serif: Georgia, serif;
   --font-mono: "Courier New", monospace;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
 
   /* ESPACIADO (Base 4px) */
   --space-1: 4px;
@@ -95,13 +97,13 @@
   --text-5xl: 64px;
   --text-4xl: 48px;
   --text-3xl: 32px;
-  --text-2xl: 24px;
-  --text-xl: 20px;
-  --text-lg: 18px;
-  --text-md: 16px;
-  --text-base: 14px;
-  --text-sm: 12px;
-  --text-xs: 10px;
+  --text-2xl: 28px;
+  --text-xl: 22px;
+  --text-lg: 20px;
+  --text-md: 18px;
+  --text-base: 16px;
+  --text-sm: 14px;
+  --text-xs: 12px;
 }
 
 /* ============================================
@@ -197,7 +199,9 @@ select {
   border: 1px solid var(--color-border);
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-md);
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 input:focus,

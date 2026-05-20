@@ -29,14 +29,16 @@
   opacity: 0.8;
 }
 
-.logoIcon {
-  color: var(--color-ocre-500);
+.logoImg {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
 .logoText h1 {
   font-family: var(--font-serif);
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   margin-bottom: 0;
   color: var(--color-ocre-300);
   letter-spacing: 1px;
@@ -64,7 +66,7 @@
 }
 
 .nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;

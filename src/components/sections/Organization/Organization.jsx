@@ -1,6 +1,9 @@
-import { Card, CardBody } from '../../common/Card/Card'
-import styles from './Organization.module.css'
-import { organizationStructure, segments } from '../../../data/organizationData'
+import { Card, CardBody } from "../../common/Card/Card";
+import styles from "./Organization.module.css";
+import {
+  organizationStructure,
+  segments,
+} from "../../../data/organizationData";
 
 export function Organization() {
   return (
@@ -40,6 +43,9 @@ export function Organization() {
           <div className={styles.segmentGrid}>
             {segments.map((segment, idx) => (
               <Card key={idx}>
+                <div className={styles.segmentImage}>
+                  <img src={segment.image} alt={segment.title} />
+                </div>
                 <CardBody>
                   <h4>{segment.title}</h4>
                   <ul className={styles.list}>
@@ -54,5 +60,5 @@ export function Organization() {
         </div>
       </div>
     </section>
-  )
+  );
 }

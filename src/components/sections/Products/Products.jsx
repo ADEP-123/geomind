@@ -1,7 +1,7 @@
-import { Card, CardBody, CardHeader } from '../../common/Card/Card'
-import { Button } from '../../common/Button/Button'
-import styles from './Products.module.css'
-import { modules, plans } from '../../../data/productsData'
+import { Card, CardBody, CardHeader } from "../../common/Card/Card";
+import { Button } from "../../common/Button/Button";
+import styles from "./Products.module.css";
+import { modules, plans } from "../../../data/productsData";
 
 export function Products() {
   return (
@@ -38,8 +38,11 @@ export function Products() {
             {plans.map((plan, idx) => (
               <Card
                 key={idx}
-                className={plan.highlight ? styles.highlightCard : ''}
+                className={plan.highlight ? styles.highlightCard : ""}
               >
+                <div className={styles.planImage}>
+                  <img src={plan.image} alt={plan.name} />
+                </div>
                 <CardHeader>
                   <h3>{plan.name}</h3>
                   <p className={styles.description}>{plan.description}</p>
@@ -62,7 +65,7 @@ export function Products() {
 
                 <div className={styles.cardFooter}>
                   <Button
-                    variant={plan.highlight ? 'primary' : 'secondary'}
+                    variant={plan.highlight ? "primary" : "secondary"}
                     fullWidth
                   >
                     {plan.cta}
@@ -74,5 +77,5 @@ export function Products() {
         </div>
       </div>
     </section>
-  )
+  );
 }
