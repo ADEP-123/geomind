@@ -14,7 +14,7 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   right: -50%;
@@ -84,10 +84,14 @@
 .graphic {
   filter: drop-shadow(var(--shadow-lg));
   animation: floatAnimation 3s ease-in-out infinite;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
 }
 
 @keyframes floatAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -110,7 +114,8 @@
 }
 
 @keyframes bounceAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) translateY(0);
   }
   50% {
@@ -119,7 +124,7 @@
 }
 
 .scrollIndicator::after {
-  content: '↓';
+  content: "↓";
   font-size: var(--text-xl);
   display: block;
 }
