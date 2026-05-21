@@ -25,7 +25,7 @@ export function Home() {
 
         <div className={styles.visual}>
           <img
-            src="/src/assets/images/Seccion_delgada.png"
+            src="/images/Seccion_delgada.png"
             alt="Análisis Geológico - Sección Delgada"
             className={styles.graphic}
           />

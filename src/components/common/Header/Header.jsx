@@ -6,7 +6,7 @@ export function Header() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <img
-            src="/src/assets/images/Logo.png"
+            src="/images/Logo.png"
             alt="GEOMIND Logo"
             className={styles.logoImg}
           />
